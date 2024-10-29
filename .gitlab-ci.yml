@@ -1,0 +1,19 @@
+# stages:
+#   - test
+#   - run_catalog
+  
+# Upload Menu Data to Braze Test:
+#   stage: run_catalog
+#   environment: test
+#   image: node:16-slim
+#   script:
+#     - npm install
+#     - npm run build
+
+# Upload Menu Data to Braze Production:
+#   stage: run_catalog
+#   environment: production
+#   image: node:16-slim
+#   script:
+#     - npm install
+#     - npm run build
