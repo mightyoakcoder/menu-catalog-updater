@@ -3,7 +3,7 @@
 .env.local
 .env.test
 .env.production
-
+.DS_Store
 # Optional npm cache directory
 .npm
 
