@@ -5,7 +5,7 @@ const menuService = {};
 menuService.getPlacards = async function(cafeId) {
   try {
     const { baseHost, accessToken } = await apigeeService.getOauthToken();
-    const url = baseHost + "/ecom/menu-service/v1/menu/" + cafeId + "/placards";
+    const url = baseHost + "/menu/" + cafeId + "/placards";
     const placardsResponse = await axios.get(url, {
       headers: { Authorization: `Bearer ${accessToken}` },
     });
@@ -19,7 +19,7 @@ menuService.getPlacards = async function(cafeId) {
 menuService.getCategories = async function (cafeId) {
   try {
     const { baseHost, accessToken } = await apigeeService.getOauthToken();
-    const url = baseHost + "/ecom/menu-service/v1/menu/" + cafeId + "/categories";
+    const url = baseHost + "/menu/" + cafeId + "/categories";
     const categoriesResponse = await axios.get(url, {
       headers: { Authorization: `Bearer ${accessToken}` },
     });
