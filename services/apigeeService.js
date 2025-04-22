@@ -7,9 +7,6 @@ var oauthCredentials = {
   secret: process.env.APIGEE_SECRET
 },
 
-concatenatedCredentials = oauthCredentials.key + ":" + oauthCredentials.secret,
-newBuffer = Buffer.from(concatenatedCredentials),
-base64 = newBuffer.toString("base64"),
 basicString = "Basic " + base64;
 
 apigeeService.getOauthToken = async function() {
