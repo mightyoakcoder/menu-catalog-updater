@@ -48,8 +48,7 @@ const buildMenu = async function() {
     for (const plc of placards) {
       for (const optSet of plc.optSets || []) {
         
-        const imageBaseUrl =
-          "https://www.panerabread.com/content/dam/panerabread/menu-omni/integrated-web/detail/";
+        const imageBaseUrl = process.env.IMG_URL;
         const imageUrl = `${imageBaseUrl}${optSet.imgKey}.jpg.transform/braze-menu/image.20240118.jpg`;
 
         var item = {
